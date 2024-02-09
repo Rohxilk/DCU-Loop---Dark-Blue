@@ -5,7 +5,7 @@ function insertCSSWhenElementAppears() {
         if (element) {
             clearInterval(checkExist);
             let link = document.createElement('link');
-            link.href = chrome.runtime.getURL('main.css');
+            link.href = chrome.runtime.getURL('../css/styles.css');
             link.rel = 'stylesheet';
             document.head.appendChild(link);
             console.log('CSS injected!');
