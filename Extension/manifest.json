@@ -1,0 +1,23 @@
+{
+    "name": "DCU Loop Page Colour Customiser",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "This extension will allow users to change the colour of the DCU Loop page to their liking.",
+    "author": "Rohail Khan",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+          "matches": ["*://loop.dcu.ie/*"],
+          "js": ["main.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+          "resources": ["main.css"],
+          "matches": ["<all_urls>"]
+        }
+      ]
+}

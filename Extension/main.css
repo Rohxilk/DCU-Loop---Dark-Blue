@@ -1,0 +1,115 @@
+/* Background of the page */
+html body {
+    background: #0085a7;
+}
+
+/* Changes colour of main body consisting of courses */
+html  .list-group-item, .form-control.withclear.rounded, .card-body.p-3, .row.pb-3.d-print-block, .block_html.block.card.mb-3, body:not(#page-site-index):not(#page-login-index):not(.pagelayout-course):not(#page-maintenance-message) #page-content #region-main-box #region-main {
+    background: #00556f;
+}
+
+html .block_recentlyaccesseditems a.dashboard-card small {
+    color: #cdf1ff;
+}
+
+html .h6.d-inline.font-weight-bold.px-2 {
+    color: #e6f8ff;
+}
+
+html ::placeholder {
+    color: white !important;
+}
+
+html .btn-outline-secondary {
+    color: #fff;
+    background-color: #006a9f;
+    border-color: #006ba0;
+}
+
+html .btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #00A5F7;
+    border-color: #00A5F7;
+}
+
+html .btn.btn-outline-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #25b6ff;
+    border-color: #22b5ff;
+}
+
+html .dropdown-menu.show, a.dropdown-item {
+    background-color: #0085ae;
+    color: #fff;
+}
+
+html h1.h2 {
+    color: #e6f8ff !important;
+}
+
+html .card.dashboard-card {
+    background: #0085a7;
+}
+
+.card-deck .card .summary-icons {
+    border-top: 1px solid #00485a;
+}
+
+html .card-footer.dashboard-card-footer.menu.border-0.bg-white.ml-auto {
+    background: #0085a7 !important;
+} 
+
+html .block .block-cards .btn.btn-link.btn-icon:hover, .block .block-cards .btn.btn-link.btn-icon:focus {
+    background-color: #00485a;
+}
+
+html body a, a:visited {
+    color: rgb(255, 255, 255);
+}
+
+html .categoryname.text-truncate {
+    color: #e6f8ff !important;
+    
+}
+
+.pagination .page-item .page-link {
+    background-color: #00334F;
+    border-color: #005583;
+    border-width: 2px;
+}
+
+html .btn.bg-secondary:not(disabled):not(.disabled), .btn.btn-secondary:not(disabled):not(.disabled) {
+    color: #fff;
+    background: #00669d;
+}
+
+html * {
+    scrollbar-width: thick;
+    scrollbar-color: #8f959e #eceeef;
+    color: white;
+}
+
+a.ql_ref:link, a.ql_ref:visited {
+    color: white !important;
+}
+
+
+
+/* Course page */
+
+html .section.main.clearfix, .moremenu.navigation.observed, #page #page-content #region-main-box #region-main {
+    background-color: #00556f !important
+
+}
+
+html .format-tiles .tile-bg {
+    background-color: #008db1;
+}
+
+html .format-tiles ul.tiles .tile-clickable:hover, .format-tiles ul.tiles .tile_bar.clickable:hover, .format-tiles ul.tiles .tile-clickable.current:hover {
+    border-top-color: #0095ff;
+}
+
+html div.tile-big {
+    color: white !important;
+}
