@@ -89,6 +89,7 @@ html * {
     color: white;
 }
 
+
 a.ql_ref:link, a.ql_ref:visited {
     color: white !important;
 }
@@ -97,9 +98,13 @@ a.ql_ref:link, a.ql_ref:visited {
 
 /* Course page */
 
-html .section.main.clearfix, .moremenu.navigation.observed, #page #page-content #region-main-box #region-main {
-    background-color: #00556f !important
+html .section.main.clearfix, .secondary-navigation .navigation .nav-tabs, #page #page-content #region-main-box #region-main {
+    background-color: #00556f !important;
 
+}
+
+html .navbar.fixed-top {
+    background-color: rgb(244, 244, 244) !important;
 }
 
 html .format-tiles .tile-bg {
@@ -112,4 +117,34 @@ html .format-tiles ul.tiles .tile-clickable:hover, .format-tiles ul.tiles .tile_
 
 html div.tile-big {
     color: white !important;
+}
+
+html div.course-content h3 {
+    color: white !important;
+}
+
+html .pagelayout-course #region-main .course-content .section li.activity, .pagelayout-course #region-main .course-content .single-section li.activity {
+    background-color: #00556f;
+}
+
+html .pagelayout-course #region-main .course-content .section li.activity,
+.pagelayout-course #region-main .course-content .single-section li.activity {
+    padding: 0;
+    margin: 0 0 1rem;
+    border-bottom: 1px solid #d7dfe3;
+    transition: color 0.3s ease; /* Add this line for the transition effect */
+}
+
+/* Apply the hover effect */
+html .pagelayout-course #region-main .course-content .section li.activity:hover, .pagelayout-course #region-main .course-content .single-section li.activity:hover {
+    color: #0095ff; /* Change to your desired hover color */
+}
+
+html .activity-altcontent.course-description-item.small.d-flex {
+    background-color: #00556f;
+}
+
+/* Footer */
+html .container-fluid p {
+    color: black !important;
 }
