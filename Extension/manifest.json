@@ -4,14 +4,16 @@
     "manifest_version": 3,
     "description": "This extension customizes the colour of the DCU Loop page to a dark blue theme.",
     "author": "Rohail Khan",
+    "permissions": ["activeTab"],
     "action": {
+        "default_title": "Toggle Extension",
         "default_popup": "html/popup.html",
         "default_icon": "img/icon.png"
     },
     "content_scripts": [
         {
           "matches": ["*://loop.dcu.ie/*"],
-          "js": ["js/background.js"]
+          "js": ["js/background.js", "js/popup.js"]
         }
     ],
     "web_accessible_resources": [
