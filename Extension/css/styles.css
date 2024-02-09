@@ -4,7 +4,12 @@ html body {
 }
 
 /* Changes colour of main body consisting of courses */
-html  .list-group-item, .form-control.withclear.rounded, .card-body.p-3, .row.pb-3.d-print-block, .block_html.block.card.mb-3, body:not(#page-site-index):not(#page-login-index):not(.pagelayout-course):not(#page-maintenance-message) #page-content #region-main-box #region-main {
+html .list-group-item,
+.form-control.withclear.rounded,
+.card-body.p-3,
+.row.pb-3.d-print-block,
+.block_html.block.card.mb-3,
+body:not(#page-site-index):not(#page-login-index):not(.pagelayout-course):not(#page-maintenance-message) #page-content #region-main-box #region-main {
     background: #00556f;
 }
 
@@ -38,7 +43,8 @@ html .btn.btn-outline-secondary.dropdown-toggle {
     border-color: #22b5ff;
 }
 
-html .dropdown-menu.show, a.dropdown-item {
+html .dropdown-menu.show,
+a.dropdown-item {
     background-color: #0085ae;
     color: #fff;
 }
@@ -57,19 +63,21 @@ html .card.dashboard-card {
 
 html .card-footer.dashboard-card-footer.menu.border-0.bg-white.ml-auto {
     background: #0085a7 !important;
-} 
+}
 
-html .block .block-cards .btn.btn-link.btn-icon:hover, .block .block-cards .btn.btn-link.btn-icon:focus {
+html .block .block-cards .btn.btn-link.btn-icon:hover,
+.block .block-cards .btn.btn-link.btn-icon:focus {
     background-color: #00485a;
 }
 
-html body a, a:visited {
+html body a,
+a:visited {
     color: rgb(255, 255, 255);
 }
 
 html .categoryname.text-truncate {
     color: #e6f8ff !important;
-    
+
 }
 
 .pagination .page-item .page-link {
@@ -78,7 +86,8 @@ html .categoryname.text-truncate {
     border-width: 2px;
 }
 
-html .btn.bg-secondary:not(disabled):not(.disabled), .btn.btn-secondary:not(disabled):not(.disabled) {
+html .btn.bg-secondary:not(disabled):not(.disabled),
+.btn.btn-secondary:not(disabled):not(.disabled) {
     color: #fff;
     background: #00669d;
 }
@@ -90,7 +99,8 @@ html * {
 }
 
 
-a.ql_ref:link, a.ql_ref:visited {
+a.ql_ref:link,
+a.ql_ref:visited {
     color: white !important;
 }
 
@@ -98,7 +108,9 @@ a.ql_ref:link, a.ql_ref:visited {
 
 /* Course page */
 
-html .section.main.clearfix, .secondary-navigation .navigation .nav-tabs, #page #page-content #region-main-box #region-main {
+html .section.main.clearfix,
+.secondary-navigation .navigation .nav-tabs,
+#page #page-content #region-main-box #region-main {
     background-color: #00556f !important;
 
 }
@@ -111,7 +123,9 @@ html .format-tiles .tile-bg {
     background-color: #008db1;
 }
 
-html .format-tiles ul.tiles .tile-clickable:hover, .format-tiles ul.tiles .tile_bar.clickable:hover, .format-tiles ul.tiles .tile-clickable.current:hover {
+html .format-tiles ul.tiles .tile-clickable:hover,
+.format-tiles ul.tiles .tile_bar.clickable:hover,
+.format-tiles ul.tiles .tile-clickable.current:hover {
     border-top-color: #0095ff;
 }
 
@@ -123,7 +137,8 @@ html div.course-content h3 {
     color: white !important;
 }
 
-html .pagelayout-course #region-main .course-content .section li.activity, .pagelayout-course #region-main .course-content .single-section li.activity {
+html .pagelayout-course #region-main .course-content .section li.activity,
+.pagelayout-course #region-main .course-content .single-section li.activity {
     background-color: #00556f;
 }
 
@@ -132,12 +147,15 @@ html .pagelayout-course #region-main .course-content .section li.activity,
     padding: 0;
     margin: 0 0 1rem;
     border-bottom: 1px solid #d7dfe3;
-    transition: color 0.3s ease; /* Add this line for the transition effect */
+    transition: color 0.3s ease;
+    /* Add this line for the transition effect */
 }
 
 /* Apply the hover effect */
-html .pagelayout-course #region-main .course-content .section li.activity:hover, .pagelayout-course #region-main .course-content .single-section li.activity:hover {
-    color: #0095ff; /* Change to your desired hover color */
+html .pagelayout-course #region-main .course-content .section li.activity:hover,
+.pagelayout-course #region-main .course-content .single-section li.activity:hover {
+    color: #0095ff;
+    /* Change to your desired hover color */
 }
 
 html .activity-altcontent.course-description-item.small.d-flex {
