@@ -1,4 +1,3 @@
-
 function insertCSSWhenElementAppears() {
     let checkExist = setInterval(function() {
         let element = document.querySelector('.modal.fade');
@@ -13,7 +12,7 @@ function insertCSSWhenElementAppears() {
         else {
             console.log('Waiting for webpage to load...');
         }
-    }, 1000); // checks every 1000ms
+    }, 100); // checks every 100ms
 }
 if (window.location.href !== 'https://loop.dcu.ie/login/index.php') {
     insertCSSWhenElementAppears();
