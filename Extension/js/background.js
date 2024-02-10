@@ -15,5 +15,6 @@ function insertCSSWhenElementAppears() {
         }
     }, 1000); // checks every 1000ms
 }
-
-insertCSSWhenElementAppears();
+if (window.location.href !== 'https://loop.dcu.ie/login/index.php') {
+    insertCSSWhenElementAppears();
+}
