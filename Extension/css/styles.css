@@ -108,6 +108,10 @@ a.ql_ref:visited {
 
 /* Course page */
 
+html .progress-indic-label, text#percent-text-0 {
+    color: white !important;
+}
+
 html .section.main.clearfix,
 .secondary-navigation .navigation .nav-tabs,
 #page #page-content #region-main-box #region-main {
@@ -161,6 +165,36 @@ html .pagelayout-course #region-main .course-content .section li.activity:hover,
 html .activity-altcontent.course-description-item.small.d-flex {
     background-color: #00556f;
 }
+
+html .tiles-top-button.buttonhidesec0.open.align-top {
+    background-color: #00556f;
+}
+
+/* Grades page */
+html #page #topofscroll {
+    background: #0085a7;
+}
+
+html .user-report-container, .table-responsive, .path-grade-report-user .user-grade thead th, .grade-report-user .user-grade thead th, .path-grade-report-user .user-grade th.category, .grade-report-user .user-grade th.category, .path-grade-report-user .user-grade th.category, .grade-report-user .user-grade th.category, .path-grade-report-user .user-grade th.column-itemname:not(.header,.category,.baggt,.baggb), .grade-report-user .user-grade th.column-itemname:not(.header,.category,.baggt,.baggb), .cat_133547, .level1.d1.b1t.b2b.b1l.cell.c0.lastcol, .level2.item.b1b, .level1.d1.baggt.b2b, .d-block.text-uppercase.small.dimmed_text{
+    background-color: #00556f !important;
+    background: #00556f !important;
+    color: white !important;
+}
+
+html .h4.m-0, .btn.dropdown-toggle {
+    color: white !important;
+}
+
+html .mr-2.mb-0 {
+    color: #00334F !important;
+}
+
+/* Side Menu (right) */
+html .drawer.drawer-right.show.d-print-none, .form-control, .btn.icon-no-margin {
+    background-color: #00556f;
+    background: #00556f !important;
+}
+
 
 /* Footer */
 html .container-fluid p {
