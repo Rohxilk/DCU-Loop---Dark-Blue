@@ -107,7 +107,10 @@ a.ql_ref:visited {
 
 
 /* Course page */
+html #page {
+    background-color: #0085a7 !important;
 
+}
 html .progress-indic-label, text#percent-text-0 {
     color: white !important;
 }
