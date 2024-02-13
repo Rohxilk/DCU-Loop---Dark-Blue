@@ -115,6 +115,10 @@ html .progress-indic-label, text#percent-text-0 {
     color: white !important;
 }
 
+html h2 {
+    color: white !important;
+
+}
 html .section.main.clearfix,
 .secondary-navigation .navigation .nav-tabs,
 #page #page-content #region-main-box #region-main {
@@ -198,7 +202,20 @@ html .drawer.drawer-right.show.d-print-none, .form-control, .btn.icon-no-margin 
     background: #00556f !important;
 }
 
+/* Assignments Page */
+html .path-mod .activity-header:not(:empty) , #region-main {
+    background-color: #00556f !important;
+}
 
+html .submissionstatussubmitted.cell.c1.lastcol, .path-mod-assign td.earlysubmission, .path-mod-assign div.earlysubmission {
+    background-color: #0095ff;
+}
+
+html .submissionnotgraded.cell.c1.lastcol {
+    color: white !important;
+}
+
+html
 /* Footer */
 html .container-fluid p {
     color: black !important;
