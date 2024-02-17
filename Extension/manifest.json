@@ -1,8 +1,8 @@
 {
-  "name": "DCU Loop - Dark Blue",
+  "name": "DCU Loop - Dark Blue BETA",
   "version": "1.0.0",
   "manifest_version": 3,
-  "description": "This extension customizes the colour of the DCU Loop page to a dark blue theme.",
+  "description": "This extension customizes the colour of the DCU Loop page to a dark blue theme. THIS EXTENSION IS FOR BETA TESTING.",
   "author": "Rohail Khan",
   "permissions": ["activeTab"],
   "action": {
