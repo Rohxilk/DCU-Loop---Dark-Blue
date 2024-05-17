@@ -1,19 +1,38 @@
-function insertCSSWhenElementAppears() {
-    let checkExist = setInterval(function() {
-        let element = document.querySelector('.modal.fade');
-        if (element) {
-            clearInterval(checkExist);
-            let link = document.createElement('link');
-            link.href = chrome.runtime.getURL('../css/styles.css');
-            link.rel = 'stylesheet';
-            document.head.appendChild(link);
+let styleLink = null;
+
+function insertCSS(tabId) {
+    if (!styleLink) {
+        styleLink = document.createElement('link');
+        styleLink.href = chrome.runtime.getURL('css/styles.css'); // Corrected path
+        styleLink.rel = 'stylesheet';
+        const cssCode = 'document.head.appendChild(' + JSON.stringify(styleLink.outerHTML) + ');';
+        chrome.tabs.executeScript(tabId, {code: cssCode}, () => {
             console.log('CSS injected!');
-        }
-        else {
-            console.log('Waiting for webpage to load...');
-        }
-    }, 100); // checks every 100ms
+        });
+    }
 }
-if (window.location.href !== 'https://loop.dcu.ie/login/index.php') {
-    insertCSSWhenElementAppears();
+
+function removeCSS(tabId) {
+    if (styleLink) {
+        const cssCode = 'var styleLink = document.querySelector(\'link[href="' + styleLink.href + '"]\'); if (styleLink) document.head.removeChild(styleLink);';
+        chrome.tabs.executeScript(tabId, {code: cssCode}, () => {
+            styleLink = null;
+            console.log('CSS removed!');
+        });
+    }
 }
+
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+    if (request.message === 'toggle_css') {
+        chrome.tabs.query({active: true, currentWindow: true}, (tabs) => {
+            const currentTab = tabs[0];
+            if (request.data === 'on') {
+                if (currentTab.url !== 'https://loop.dcu.ie/login/index.php') {
+                    insertCSS(currentTab.id);
+                }
+            } else if (request.data === 'off') {
+                removeCSS(currentTab.id);
+            }
+        });
+    }
+});
