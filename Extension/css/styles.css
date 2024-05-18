@@ -113,6 +113,7 @@ html #page {
 }
 html .progress-indic-label, text#percent-text-0 {
     color: white !important;
+    fill: white !important;
 }
 
 html h2 {
@@ -126,6 +127,10 @@ html .section.main.clearfix,
 
 }
 
+html #moremenu-664810eaf2198-nav-tabs, .nav-link.active.active_tree_node{
+    background-color: #36d0ff !important;
+    font-weight: bold;
+}
 html .navbar.fixed-top {
     background-color: rgb(244, 244, 244) !important;
 }
@@ -148,6 +153,9 @@ html div.course-content h3 {
     color: white !important;
 }
 
+html h4, #yui_3_17_2_1_1715999534855_63 {
+    color: white !important;
+}
 html .pagelayout-course #region-main .course-content .section li.activity,
 .pagelayout-course #region-main .course-content .single-section li.activity {
     background-color: #00556f;
@@ -175,6 +183,19 @@ html .activity-altcontent.course-description-item.small.d-flex {
 
 html .tiles-top-button.buttonhidesec0.open.align-top {
     background-color: #00556f;
+}
+
+html div.card-block {
+    background-color: #00556f;
+
+}
+
+html .close span {
+    color: rgb(0, 0, 0) !important;
+
+}
+html .tile-link, .path-mod .activity-navigation .btn-link {
+    color: white !important;
 }
 
 /* Grades page */
@@ -217,6 +238,19 @@ html .submissionnotgraded.cell.c1.lastcol {
 
 html
 /* Footer */
-html .container-fluid p {
-    color: black !important;
+html .container-fluid p, .mobilelink, .policiesfooter a{
+    color: rgb(255, 255, 255) !important;
+}
+
+html #page-footer {
+    background-color: #2d91af !important;
+}
+
+/* Other Pages */
+html .alert.alert-info, .btn.btn-light.btn-lg{
+    background-color: #005c78 !important;
+}
+
+html .popover-region-container, .content-item-container.unread, .popover-region-footer-container, #nav-drawer, #drawer-664815fcdcd62664815fcb914611, .bg-white, .message-app, .card-header.rounded-0 {
+    background-color: #006a8b !important;
 }
