@@ -167,14 +167,12 @@ html .pagelayout-course #region-main .course-content .section li.activity,
     margin: 0 0 1rem;
     border-bottom: 1px solid #d7dfe3;
     transition: color 0.3s ease;
-    /* Add this line for the transition effect */
 }
 
 /* Apply the hover effect */
 html .pagelayout-course #region-main .course-content .section li.activity:hover,
 .pagelayout-course #region-main .course-content .single-section li.activity:hover {
     color: #0095ff;
-    /* Change to your desired hover color */
 }
 
 html .activity-altcontent.course-description-item.small.d-flex {
